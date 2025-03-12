@@ -27,7 +27,7 @@ public class HelloWorldController {
 
 	@GetMapping("/welcome")
 	public String welcome(@RequestParam(value = "name", defaultValue = "in Spring Boot World") String name) {
-		return String.format("Welcome %s!", name);
+		return String.format("Welcome to Azure pipeline%s!", name);
 	}
 
 	@GetMapping("/listbuckets")
